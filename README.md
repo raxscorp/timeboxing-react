@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+Project: Timeboxing App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A. Overview
 
-## Available Scripts
+    A simple task management app built with React and Bootstrap.
 
-In the project directory, you can run:
+    Allows users to add and remove tasks dynamically.
 
-### `npm start`
+B. Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Add tasks to a list using an input field.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    Remove tasks by clicking the "Remove" button.
 
-### `npm test`
+    Bootstrap UI for a clean and responsive design.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+C. Technology Used
 
-### `npm run build`
+    React (for building UI components)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Bootstrap (for styling and layout)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+D. How to Run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Make sure Node.js and npm are installed.
 
-### `npm run eject`
+    1. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+	npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    2. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    	npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    3. Open the app in your browser at http://localhost:3000/.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+E. Fix for Bootstrap CDN Issue
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Remove this line from App.js:
 
-### Code Splitting
+	import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Instead, add the following line to public/index.html inside the <head> tag:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
